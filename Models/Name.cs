@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Pokedex3.Models
+namespace Pokedex4.Models
 {
     public class Name
     {

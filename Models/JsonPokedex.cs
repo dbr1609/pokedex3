@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Pokedex3.Models
+namespace Pokedex4.Models
 {
     public class JsonPokedex : IPokedex
     {
-        private List<Pokemon> pokemon;
+        private List<Pokemon> pokemons;
 
         public DateTime GeneratedAt { get; set; }
 
@@ -25,13 +25,13 @@ namespace Pokedex3.Models
 
         public JsonPokedex()
         {
-            this.pokemon = getPokemon();
+            this.pokemons = getPokemon();
             this.GeneratedAt = DateTime.Now;
         }
 
         public Pokemon Get(int id)
         {
-            foreach (Pokemon p in pokemon)
+            foreach (Pokemon p in pokemons)
             {
                 if (p.Id == id)
                 {
@@ -43,7 +43,13 @@ namespace Pokedex3.Models
 
         public List<Pokemon> GetAll()
         {
-            return pokemon;
+            return pokemons;
+        }
+
+        public void Save(Pokemon pokemon)
+        {
+            var index = this.pokemons.FindIndex(p => p.Id == pokemon.Id);
+            this.pokemons[index] = pokemon;
         }
     }
 }

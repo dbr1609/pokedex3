@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jn1248\\OneDrive - ENGIE\\Avondschool\\Web Frameworks\\Pokedex3\\Pokedex3.csproj",
-      "projectName": "Pokedex3",
-      "projectPath": "C:\\Users\\jn1248\\OneDrive - ENGIE\\Avondschool\\Web Frameworks\\Pokedex3\\Pokedex3.csproj",
+      "projectUniqueName": "C:\\Users\\jn1248\\OneDrive - ENGIE\\Avondschool\\Web Frameworks\\Pokedex3 - Copy\\Pokedex4.csproj",
+      "projectName": "Pokedex4",
+      "projectPath": "C:\\Users\\jn1248\\OneDrive - ENGIE\\Avondschool\\Web Frameworks\\Pokedex3 - Copy\\Pokedex4.csproj",
       "packagesPath": "C:\\Users\\jn1248\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jn1248\\OneDrive - ENGIE\\Avondschool\\Web Frameworks\\Pokedex3\\obj\\",
+      "outputPath": "C:\\Users\\jn1248\\OneDrive - ENGIE\\Avondschool\\Web Frameworks\\Pokedex3 - Copy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jn1248\\AppData\\Roaming\\NuGet\\NuGet.Config",

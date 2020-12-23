@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Pokedex3.Models;
+using Pokedex4.Models;
 
-namespace Pokedex3
+namespace Pokedex4
 {
     public class Startup
     {
@@ -18,7 +18,7 @@ namespace Pokedex3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<IPokedex, JsonPokedex>();
+            services.AddSingleton<IPokedex, JsonPokedex>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

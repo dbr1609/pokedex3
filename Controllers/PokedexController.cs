@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Pokedex3.Models;
+using Pokedex4.Models;
 
-namespace Pokedex3.Controllers
+namespace Pokedex4.Controllers
 {
     public class PokedexController : Controller
     {
@@ -37,6 +37,19 @@ namespace Pokedex3.Controllers
                 return View(pokemon);
             }
             return NotFound();
+        }
+        [HttpPost]
+        public IActionResult Details(int id, Pokemon pokemon)
+        {
+            Pokemon p = pokedex.Get(id);
+            
+            if (ModelState.IsValid)
+            {
+                p.Base = pokemon.Base;
+                TempData["Message"] = $"{p.Name.English} was updated!";
+                this.pokedex.Save(p);
+            }
+            return View(p);
         }
     }
 }
